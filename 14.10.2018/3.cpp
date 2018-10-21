@@ -9,7 +9,7 @@ using namespace std;
 int main() {
 	int a, i;
 	float ar;
-	i = 0; s
+	i = 0;
 
 		while (a != 0) {
 			cin >> a;
