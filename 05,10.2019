@@ -1,0 +1,48 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main ()
+{
+int n;
+pair av[n];
+int av.first;
+int av.second;
+printf(“введите две смежные вершины»);
+for (int i=0; getchar()!=“/n”;i++)
+{
+scanf(“%d”,&av.first);
+scanf(“%d”,&av.second);
+}
+\\матрица смежности\\
+int ma[n][n];
+for (int k=0;k<n;k++)
+{
+ma[av.first[k]][av.second[k]]=1;
+ma[av.second[k]][av.first[k]]=1;
+}
+\\наоборот\\
+for (int k=0;k<n;k++)
+{
+for (int l=0;l<n;l++)
+{ 
+if (ma[k][l]]==1)
+push_back(av,k,l); 
+\\предполагаем, что есть такая функция для добавления в пустой массив пары элементов в конец (последнюю ячейку)\\
+}
+}
+\\список смежности\\
+std::vector<vector<int» sm;
+\\из списка рёбер - в список смежности\\
+for (i=0;i<n;i++)
+{
+am[av.first[i]].push_back(av.second[i]);
+am[av.second[i]].push_back(av.first[i]);
+\\наоборот\\
+for (i=0;i<n;i++)
+{
+for (k=0;k<n;k++)
+push_back(av,sm[i],sm[k]);
+}
+}
+}
+}
